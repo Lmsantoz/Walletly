@@ -1,59 +1,60 @@
 # Walletly
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+Walletly é um aplicativo web de **finanças pessoais** construído com Angular que ajuda usuários a gerir suas finanças pessoais e familiares de forma prática. O sistema centraliza metas financeiras, orçamento familiar e controle de dívidas, exibindo tudo em painéis (dashboards) visuais e interativos:contentReference[oaicite:0]{index=0}.
 
-## Development server
+## Visão geral
 
-To start a local development server, run:
+O objetivo do Walletly é criar uma solução moderna, escalável e responsiva para finanças pessoais. A aplicação permite que os usuários controlem gastos individuais e familiares em um único app, oferecendo **visualização gráfica da situação financeira** e funcionalidades de alerta/relatórios para decisões mais rápidas:contentReference[oaicite:1]{index=1}.
 
-```bash
-ng serve
-```
+## Recursos
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Autenticação
 
-## Code scaffolding
+- Cadastro e login de usuário (por JWT ou back‑end de simulação).
+- Rotas protegidas por guards e armazenamento seguro do token no `localStorage`:contentReference[oaicite:2]{index=2}.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Dashboard
 
-```bash
-ng generate component component-name
-```
+- Painel com saldo atual, progresso das metas e dívidas pendentes.
+- Gráficos interativos de entradas, saídas e evolução das finanças:contentReference[oaicite:3]{index=3}.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Metas financeiras
 
-```bash
-ng generate --help
-```
+- CRUD completo de metas (criar, visualizar, atualizar e excluir):contentReference[oaicite:4]{index=4}.
+- Barra de progresso com simulação de tempo e valor acumulado, com notificação quando a meta for atingida:contentReference[oaicite:5]{index=5}.
 
-## Building
+### Orçamento familiar
 
-To build the project run:
+- Registro de entradas (salário, renda extra) e de saídas (gastos do dia a dia):contentReference[oaicite:6]{index=6}.
+- Consolidação do saldo familiar e ranking de quem mais gastou:contentReference[oaicite:7]{index=7}.
 
-```bash
-ng build
-```
+### Controle de dívidas
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Cadastro de dívidas com valor, juros compostos e número de parcelas:contentReference[oaicite:8]{index=8}.
+- Geração de cronograma de pagamento e alertas para vencimento das parcelas:contentReference[oaicite:9]{index=9}.
 
-## Running unit tests
+### Gráficos e relatórios
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Integração com bibliotecas de gráficos (ng‑apexcharts ou Chart.js) para gráficos de pizza, barras e linhas:contentReference[oaicite:10]{index=10}.
+- Exportação de dados em CSV ou PDF:contentReference[oaicite:11]{index=11}.
 
-```bash
-ng test
-```
+## Stack tecnológica
 
-## Running end-to-end tests
+- **Frontend:** Angular 20, com renderização server‑side (SSR) habilitada:contentReference[oaicite:12]{index=12}.
+- **Estilização:** Tailwind CSS:contentReference[oaicite:13]{index=13}.
+- **Gráficos:** ng‑apexcharts ou Chart.js:contentReference[oaicite:14]{index=14}.
+- **Back‑end (mock):** JSON Server ou Angular In‑Memory Web API:contentReference[oaicite:15]{index=15}.
+- **Autenticação:** JWT (ou simulação mock):contentReference[oaicite:16]{index=16}.
 
-For end-to-end (e2e) testing, run:
+## Pré‑requisitos
 
-```bash
-ng e2e
-```
+- [Node.js](https://nodejs.org/) (versão recomendada ≥ 18);
+- [Angular CLI](https://angular.io/cli), instalável via `npm install -g @angular/cli`.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Instalação
 
-## Additional Resources
+1. Clone este repositório e entre na pasta do projeto:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   git clone https://github.com/Lmsantoz/Walletly.git
+   cd Walletly
