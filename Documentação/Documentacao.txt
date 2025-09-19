@@ -1,0 +1,76 @@
+📘 Documentação Completa – Finanças Pessoais App
+
+📖 Visão Geral
+
+O Walletly App é uma aplicação web desenvolvida em Angular, com objetivo de ajudar usuários a gerenciar finanças pessoais e familiares de forma prática.
+O sistema centraliza metas financeiras, orçamento familiar e controle de dívidas, exibindo tudo em dashboards visuais e interativos.
+
+🎯 Objetivos do Projeto
+
+Criar uma solução moderna, escalável e responsiva para finanças pessoais.
+
+Permitir controle individual e familiar em um só app.
+
+Proporcionar visualização gráfica clara da situação financeira.
+
+Implementar funcionalidades de alerta e exportação de relatórios para decisões mais rápidas.
+
+🚀 Funcionalidades
+
+🔐 Autenticação
+
+Cadastro e login de usuário (JWT ou mock backend).
+
+Rotas protegidas por Guards.
+
+Armazenamento seguro de token no localStorage.
+
+📊 Dashboard
+
+Visão geral com saldo atual, progresso de metas e dívidas pendentes.
+
+Gráficos interativos de entradas, saídas e evolução.
+
+🎯 Metas Financeiras
+
+CRUD de metas (criar, visualizar, atualizar, excluir).
+
+Barra de progresso com simulação de tempo e valor acumulado.
+
+Notificação quando meta for atingida.
+
+🏡 Orçamento Familiar
+
+Cadastro de entradas (salário, renda extra).
+
+Cadastro de saídas (gastos do dia a dia).
+
+Consolidação do saldo familiar.
+
+Ranking de quem mais gastou.
+
+💳 Controle de Dívidas
+
+Cadastro de dívidas (valor, juros compostos, número de parcelas).
+
+Geração de cronograma de pagamento.
+
+Alertas para vencimento de parcelas.
+
+📈 Gráficos e Relatórios
+
+Gráficos (pie, bar, line) com ng-apexcharts ou chart.js.
+
+Exportação de dados em CSV/PDF.
+
+🛠️ Stack Tecnológica
+
+Frontend: Angular
+
+Estilização: TailwindCSS
+
+Gráficos: ng-apexcharts ou chart.js
+
+Backend mock: JSON Server / Angular InMemoryWebApi
+
+Autenticação: JWT (ou simulação mock)
