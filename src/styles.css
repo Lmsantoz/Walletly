@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+
+    /* cores da página */
+
+    --primary-color: #0074c2;
+    --secondary-color: #000b13;
+    --text-secondary-color: #6B7280;
+    --third-color: #f7fafc;
+    --ease-background: #F9FAFB;
+    --border-color: #E5E7EB;
+
+    /* cores dos botoes */
+    
+    --primary-button-bg: #1da1f2;
+    --primary-button-font: #fff;
+    --primary-button-hover: #0e74b4;
+
+    --secondary-button-bg: #fff;
+    --secondary-button-border: #1da1f2;
+    --secondary-button-font: #1da1f2;
+    --secondary-button-hover:  #56beff;
+
+    --card-bg: #fff;
+    --card-border: #e5e7eb;
+    --card-shadow: #e6f6fe;
+
+    /* tipografia da pagina */
+
+    --title-font: 'Montserrat';
+    --title-font-bold: 700;
+    --title-font-lg: 32px;
+    --title-font-md: 24px;
+    --title-font-sm: 20px;
+
+    --body-font: 'Roboto';
+    --body-font-bold: 400;
+    --body-font-md: 16px;
+
+    --button-font: 'Roboto';
+    --button-font-bold: 600;
+    --button-font-md: 16px;
+
+    /* espaçamentos */
+
+    --padding-default: 4rem;
+    --space-box: 1.5rem;
+    --space-button-sm: 0.75rem;
+    --space-button-md: 1.5rem;
+
+}
