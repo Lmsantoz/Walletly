@@ -1,8 +1,43 @@
 <div class="container">
-    <div class="container-log">
-        <img src="/logo.png" class="logo-img" alt="logo Walletly">
+    <div class="container-logo">
+        <img src="/Walletly(1).png" class="logo-img" alt="logo Walletly">
     </div>
     <div class="container-login">
-        
+        <mat-form-field>
+    <mat-label>Enter your email</mat-label>
+    <input
+      matInput
+      placeholder="pat@example.com"
+      [formControl]="email"
+      (blur)="updateErrorMessage()"
+      required
+    />
+    @if (email.invalid) {
+      <mat-error>{{errorMessage()}}</mat-error>
+    }
+  </mat-form-field>
+  
+        <div class="input-password">
+        <mat-form-field>
+            <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide() ? 'password' : 'text'" />
+                    <button
+                        matIconButton
+                        matSuffix
+                        (click)="clickEvent($event)"
+                        [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide()"
+                    >
+                    <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+        </mat-form-field>
+
+        </div>
+        <div class="button-submit">
+            <button type="submit">
+                Entrar
+            </button>
+            <a routerLink="/cadastrar"></a>
+        </div>
     </div>
 </div>
