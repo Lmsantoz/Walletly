@@ -1,25 +1,32 @@
+@import "tailwindcss";
 
-.container-logo img {
-    width: 10%;
+
+.container{
+    @apply flex justify-center items-center min-h-screen
 }
 
-.example-container mat-form-field + mat-form-field {
-  margin-left: 8px;
+.box-login {
+    @apply flex items-center justify-center gap-10 shadow-md w-70 box-border p-10 rounded-lg
 }
 
-.example-right-align {
-  text-align: right;
+.submit-form{
+    @apply flex flex-col gap-5 items-center 
 }
 
-input.example-right-align::-webkit-outer-spin-button,
-input.example-right-align::-webkit-inner-spin-button {
-  display: none;
+.input-email {
+    @apply p-4
+}
+.input-email input{
+   @apply bg-sky-100 p-3 rounded-sm w-full
+}
+.input-password input{
+   @apply bg-sky-100 p-3 rounded-sm w-full
 }
 
-input.example-right-align {
-  -moz-appearance: textfield;
+input  {
+    @apply placeholder-sky-300 
 }
 
-.example-container mat-form-field + mat-form-field {
-  margin-left: 8px;
+.button-submit button{
+    @apply bg-sky-500    w-full p-3
 }
