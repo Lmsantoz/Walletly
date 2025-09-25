@@ -1,14 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
 :root {
 
     /* cores da página */
 
-    --primary-color: #0074c2;
-    --secondary-color: #000b13;
-    --text-secondary-color: #6B7280;
-    --third-color: #f7fafc;
-    --ease-background: #F9FAFB;
-    --border-color: #E5E7EB;
+    --color-primary: #0074c2;
+    --color-secondary: #000b13;
+    --color-text-secondary: #6B7280;
+    --color-third: #f7fafc;
+    --color-ease-background: #F9FAFB;
+    --color-border: #E5E7EB;
 
     /* cores dos botoes */
     
@@ -33,7 +34,7 @@
     --title-font-md: 24px;
     --title-font-sm: 20px;
 
-    --body-font: 'Roboto';
+    --font-roboto: 'Roboto';
     --body-font-bold: 400;
     --body-font-md: 16px;
 
@@ -50,4 +51,6 @@
 
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    @apply font-(family-name:--font-roboto) bg-white
+ }
